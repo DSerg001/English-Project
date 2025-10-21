@@ -1,0 +1,166 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Լրիվ էկրան */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -3;
+  filter: brightness(0.8) saturate(1.2);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(14, 60, 83, 0.6); /* Dark Blue overlay */
+  z-index: -1;
+}
+
+.hero-content {
+  text-align: center;
+  color: var(--white);
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #89f7fe;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--white);
+}
+
+/* === B U T T O N === */
+.hero-button {
+  position: relative;
+  overflow: hidden; /* որպեսզի փայլը չանցնի սահմաններից դուրս */
+  background: linear-gradient(135deg, #66a6ff, #89f7fe);
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Փայլի էֆեկտ */
+.hero-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.4), transparent);
+  transition: left 0.5s ease;
+}
+
+.hero-button:hover::before {
+  left: 100%;
+}
+
+.hero-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+}
+
+/* Scroll arrow */
+.scroll-down {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  cursor: pointer;
+  animation: bounce 1.5s infinite;
+  color: #89f7fe;
+}
+
+.scroll-down:hover {
+  color: #66a6ff;
+}
+
+.scroll-down svg {
+  color: #89f7fe; /* կամ անհրաժեշտ գույնը */
+}
+
+.scroll-down svg:hover {
+  color: #66a6ff; /* կամ անհրաժեշտ գույնը */
+}
+
+/* Անընդհատ վեր-ներք շարժում */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(8px);
+  }
+  60% {
+    transform: translateY(4px);
+  }
+}
+
+.project-info {
+  margin: 1.5rem 0;
+  color: var(--white);
+  font-size: 1rem;
+  text-align: center; /* Կենտրոն align */
+}
+
+.project-info strong {
+  color: #89f7fe;
+}
+
+.project-info > div {
+  margin-top: 0.5rem;
+}
+
+.project-info > div p {
+  margin: 0.2rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-background {
+    object-fit: cover; /* փոքր էկրանի համար կրկին cover */
+    filter: brightness(0.6) saturate(1); /* ավելի մուգ, տեքստը ընթեռնելի պահելու համար */
+  }
+}

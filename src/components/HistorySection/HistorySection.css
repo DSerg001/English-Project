@@ -1,0 +1,81 @@
+.history-section {
+  padding: 60px 20px;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  text-align: center;
+}
+
+.history-section h2 {
+  font-size: 2.5rem;
+  color: #89f7fe;
+  margin-bottom: 40px;
+}
+
+.history-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.history-item {
+  background-color: rgba(14, 60, 83, 0.8);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.history-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.history-title:hover {
+  color: #89f7fe;
+}
+
+.history-content {
+  padding: 15px 20px;
+  background-color: rgba(14, 60, 83, 0.6);
+  animation: slideDown 0.3s ease;
+}
+
+.history-button {
+  color: var(--white);
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.history-button:hover {
+  color: #89f7fe;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .history-title {
+    font-size: 1rem;
+    padding: 12px 15px;
+  }
+
+  .history-content {
+    padding: 12px 15px;
+    font-size: 0.95rem;
+  }
+}

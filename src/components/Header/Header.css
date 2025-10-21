@@ -1,0 +1,184 @@
+:root {
+  --teal: #26a9a3;
+  --dark-blue: #0e3c53;
+  --green: #6dcb5a;
+  --white: #ffffff;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* Logo ձախ՝ 10% շեղումով */
+.logo {
+  position: relative;
+  left: 3%;
+}
+
+.logo img {
+  height: 45px;
+  width: 45px;
+  object-fit: contain;
+}
+
+/* Nav-links կենտրոնում */
+.nav-links {
+  display: flex;
+  gap: 35px;
+  flex: 1;
+  justify-content: center;
+  font-size: 19px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 600;
+  position: relative; /* pseudo-element-ի համար */
+  transition: color 0.3s ease;
+}
+
+/* Hover: underline animation + text color change */
+.nav-links a:hover {
+  color: #89f7fe;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* գծի դիրքը տեքստից */
+  width: 0%;
+  height: 2px;
+  background-color: #89f7fe;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Active link: underline և գույն միանգամից */
+.nav-links a.active-link {
+  color: #89f7fe;
+}
+
+.nav-links a.active-link::after {
+  width: 100%;
+  transition: none;
+}
+
+/* Hamburger small screens */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* Language dropdown աջ */
+.language-switcher {
+  position: relative;
+  cursor: pointer;
+}
+
+.selected-language {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.selected-flag {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background: var(--dark-blue);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 200;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  color: var(--white);
+  font-weight: 500;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background: linear-gradient(135deg, #66a6ff, #89f7fe);
+}
+
+.dropdown-flag {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.chevron-icon {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.selected-language:hover .chevron-icon {
+  color: #89f7fe;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: var(--dark-blue);
+    align-items: center;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    z-index: 150;
+  }
+
+  .nav-links.active {
+    max-height: 500px; /* կարող է փոփոխվել ըստ անհրաժեշտության */
+    opacity: 1;
+  }
+
+  .nav-links a {
+    padding: 12px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* Logo small screens */
+  .logo {
+    left: 0;
+  }
+}  
