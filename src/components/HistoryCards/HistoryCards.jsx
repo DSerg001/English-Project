@@ -1,20 +1,19 @@
-// src/components/HistorySection/HistorySection.js
+// src/components/HistoryCards/HistoryCards.js
 import { useState } from "react";
-import "./HistorySection.css";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
+import "./HistoryCards.css";
 
-// Import data
+// Import all data
 import ancientAges from "../../data/ancientages";
 import middleAges from "../../data/middleages";
 import renaissance from "../../data/renaissance";
 import centuries16_17 from "../../data/16_17centuries";
-import centuries18_19 from "../../data/18-19centuries";
+import centuries18_19 from "../../data/18_19centuries";
 import centuries20_21 from "../../data/20_21centuries";
 
-function HistorySection({ language }) {
+function HistoryCards({ language }) {
   const [openIndex, setOpenIndex] = useState(null);
 
-  const eras = [
+  const historyData = [
     {
       titleEn: "Ancient Century",
       titleHy: "Հին ժամանակներ",
@@ -52,21 +51,16 @@ function HistorySection({ language }) {
   };
 
   return (
-    <section className="history-section" id="history">
+    <section className="history-cards-section" id="history">
       <h2>
         {language === "hy" ? "Բժշկության Պատմություն" : "History of Medicine"}
       </h2>
-      <div className="history-container">
-        {eras.map((era, index) => (
-          <div className="history-item" key={index}>
-            <div className="history-title" onClick={() => toggleOpen(index)}>
-              <span>{language === "hy" ? era.titleHy : era.titleEn}</span>
-              {openIndex === index ? (
-                <FaChevronUp className="history-button" />
-              ) : (
-                <FaChevronDown className="history-button" />
-              )}
-            </div>
+      <div className="history-cards-container">
+        {historyData.map((era, index) => (
+          <div className="era-card" key={index}>
+            <h3 className="era-title" onClick={() => toggleOpen(index)}>
+              {language === "hy" ? era.titleHy : era.titleEn}
+            </h3>
             {openIndex === index && (
               <div className="cards-grid">
                 {era.data.map((doctor) => (
@@ -102,4 +96,4 @@ function HistorySection({ language }) {
   );
 }
 
-export default HistorySection;
+export default HistoryCards;

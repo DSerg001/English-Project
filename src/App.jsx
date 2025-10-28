@@ -1,4 +1,4 @@
-import React, { useEffect, lazy, Suspense, useState } from "react";
+import { useEffect, lazy, Suspense, useState } from "react";
 import "./App.css";
 import { useLanguageStore } from "./store/languageStore";
 import Loader from "./components/Loader/Loader";
