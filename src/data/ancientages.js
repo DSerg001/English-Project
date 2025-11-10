@@ -7,7 +7,7 @@ const ancientDoctors = [
       en: "Hippocrates",
       hy: "Հիպոկրատ",
     },
-    lifespan: "c. 460–370 BC",
+    lifespan: "c. 460 – c. 370 BC",
     title: {
       en: "Father of Medicine",
       hy: "Բժշկության հայրը",

@@ -65,7 +65,7 @@ function HeroSection({ language }) {
         playsInline
       />
 
-      <div className="hero-overlay"></div>
+      {/* <div className="hero-overlay"></div> */}
 
       <div className="hero-content">
         <h1>{t.title}</h1>

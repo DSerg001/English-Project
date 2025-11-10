@@ -41,12 +41,6 @@
   color: #89f7fe;
 }
 
-.history-content {
-  padding: 15px 20px;
-  background-color: rgba(14, 60, 83, 0.6);
-  animation: slideDown 0.3s ease;
-}
-
 .history-button {
   color: var(--white);
   transition: color 0.3s ease;
@@ -59,18 +53,21 @@
 
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: 1fr;
   gap: 1.5rem;
   margin-top: 1rem;
 }
 
 .doctor-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 1rem;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  text-align: center;
+  text-align: left;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -80,21 +77,30 @@
 }
 
 .doctor-image {
-  width: 100%;
-  height: 200px;
+  width: 170px;
+  height: 170px;
   object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.doctor-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .doctor-name {
   font-weight: 600;
+  font-size: 17px;
+  text-align: center;
   margin-bottom: 0.2rem;
-  color: #fff;
+  color: #89f7fe;
 }
 
 .doctor-lifespan {
   font-size: 0.9rem;
+  text-align: center;
   color: #cfd8dc;
   margin-bottom: 0.5rem;
 }
@@ -113,13 +119,23 @@
 }
 
 .doctor-link {
+  display: inline-block;
   font-weight: 500;
-  color: #ff6b6b;
+  font-size: 17px;
+  padding: 8px 20px;
+  background: linear-gradient(135deg, #66a6ff, #89f7fe);
+  color: #fff;
   text-decoration: none;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+  margin-top: auto;
+  align-self: flex-end;
+  margin-top: 50px;
 }
 
 .doctor-link:hover {
-  text-decoration: underline;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 @keyframes slideDown {
@@ -140,8 +156,27 @@
     padding: 12px 15px;
   }
 
-  .history-content {
-    padding: 12px 15px;
-    font-size: 0.95rem;
+  .cards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .doctor-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .doctor-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  .doctor-info-wrapper {
+    align-items: center;
+  }
+  
+  .doctor-link {
+    align-self: center;
+    margin-top: 0.5rem;
   }
 }

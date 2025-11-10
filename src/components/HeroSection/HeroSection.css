@@ -8,6 +8,7 @@
   overflow: hidden;
 }
 
+/* Տեսանյութը */
 .video-background {
   position: absolute;
   top: 0;
@@ -15,29 +16,35 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -3;
-  filter: brightness(0.8) saturate(1.2);
+  z-index: -2; /* ավելի ցածր՝ overlay-ը լինի վերևում */
+  filter: brightness(0.9) saturate(1.2);
 }
 
-.hero-overlay {
+/* Overlay՝ առանց լրացուցիչ div-ի */
+.hero-section::after {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(14, 60, 83, 0.6); /* Dark Blue overlay */
-  z-index: -1;
+  background: rgba(14, 60, 83, 0.55); /* մուգ կապույտ թափանցիկ շերտ */
+  z-index: -1; /* վերև video-ից, բայց տակ content-ի */
+  pointer-events: none;
 }
 
 .hero-content {
+  position: relative;
   text-align: center;
   color: var(--white);
   padding: 0 20px;
+  margin-top: 30px;
+  z-index: 1; /* content-ը միշտ լինի վերևում */
 }
 
 .hero-content h1 {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: #89f7fe;
 }
 
@@ -149,12 +156,12 @@
   }
 
   .hero-content p {
-    font-size: 1rem;
+    font-size: 20px;
   }
 
   .hero-button {
     padding: 10px 20px;
-    font-size: 0.9rem;
+    font-size: 15px;
   }
 }
 
