@@ -51,6 +51,14 @@
   color: #89f7fe;
 }
 
+.doctor-group-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #89f7fe;
+  margin: 20px 0 10px 0; /* վերևից ու ներքևից բացատ */
+  text-align: center; /* կենտրոնավորում է տեքստը քարտերի վերևում */
+}
+  
 .cards-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -164,17 +172,16 @@
     flex-direction: column;
     text-align: center;
   }
-  
+
   .doctor-image {
     width: 100%;
     height: auto;
     margin-bottom: 0.5rem;
   }
-  
+
   .doctor-info-wrapper {
     align-items: center;
   }
-  
   .doctor-link {
     align-self: center;
     margin-top: 0.5rem;

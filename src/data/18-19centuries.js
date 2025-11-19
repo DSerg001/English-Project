@@ -2,148 +2,141 @@
 
 const centuries18_19Doctors = [
   {
-    id: 1,
-    name: {
-      en: "Edward Jenner",
-      hy: "Էդուարդ Ջեններ",
-    },
-    lifespan: "1749–1823",
-    title: {
-      en: "Developer of the First Vaccine",
-      hy: "Առաջին պատվաստանյութի ստեղծող",
-    },
-    information: {
-      en: "Created the first smallpox vaccine in 1796.",
-      hy: "1796 թվականին ստեղծել է ջրծաղիկի դեմ առաջին պատվաստանյութը։",
-    },
-    image: "/images/jenner.jpg",
-    link: "/doctors/jenner",
+    group: { en: "English Doctors", hy: "Անգլիացի բժիշկներ" }, // Ճշգրտում
+    doctors: [
+      {
+        name: { en: "Edward Jenner", hy: "Էդվարդ Ջեններ" }, // Ճշգրտում
+        lifespan: { en: "1749–1823", hy: "1749–1823 թթ." }, // Ճշգրտում
+        title: {
+          en: "Developer of the First Vaccine",
+          hy: "Առաջին պատվաստանյութի ստեղծող",
+        },
+        information: {
+          en: "Created the first smallpox vaccine in 1796.",
+          hy: "1796 թվականին ստեղծել է ծաղկի դեմ առաջին պատվաստանյութը։", // Ճշգրտում
+        },
+        image: "/images/jenner.jpg",
+        link: "/doctors/jenner",
+      },
+      {
+        name: { en: "John Snow", hy: "Ջոն Սնոու" },
+        lifespan: { en: "1813–1858", hy: "1813–1858 թթ." }, // Ճշգրտում
+        title: {
+          en: "Founder of Epidemiology",
+          hy: "Համաճարակաբանության հիմնադիր",
+        },
+        information: {
+          en: "Identified the source of a cholera outbreak and advanced epidemiology.",
+          hy: "Բացահայտել է խոլերայի համաճարակի աղբյուրը և զարգացրել համաճարակաբանությունը։",
+        },
+        image: "/images/john-snow.jpg",
+        link: "/doctors/john-snow",
+      },
+    ],
   },
   {
-    id: 2,
-    name: {
-      en: "Ignaz Semmelweis",
-      hy: "Իգնաց Սեմմելվայս",
-    },
-    lifespan: "1818–1865",
-    title: {
-      en: "Pioneer of Hand Hygiene",
-      hy: "Ձեռքերի լվացման pionier",
-    },
-    information: {
-      en: "Emphasized the importance of hand washing to prevent infections.",
-      hy: "Աշխատել է վարակների կանխարգելման համար ձեռքեր լվանալու կարևորությունը։",
-    },
-    image: "/images/semmelweis.jpg",
-    link: "/doctors/semmelweis",
+    group: { en: "Austrian Doctors", hy: "Ավստրիացի բժիշկներ" }, // Ճշգրտում
+    doctors: [
+      {
+        name: { en: "Ignaz Semmelweis", hy: "Իգնաց Զեմելվայս" }, // Ճշգրտում
+        lifespan: { en: "1818–1865", hy: "1818–1865 թթ." }, // Ճշգրտում
+        title: {
+          en: "Pioneer of Hand Hygiene",
+          hy: "Ձեռքերի հիգիենայի նախակարապետ", // Ճշգրտում
+        },
+        information: {
+          en: "Emphasized the importance of hand washing to prevent infections.",
+          hy: "Կարևորել է վարակների կանխարգելման համար ձեռքերը լվանալու նշանակությունը։",
+        },
+        image: "/images/semmelweis.jpg",
+        link: "/doctors/ignaz-semmelweis",
+      },
+    ],
   },
   {
-    id: 3,
-    name: {
-      en: "Louis Pasteur",
-      hy: "Լուի Պաստյոր",
-    },
-    lifespan: "1822–1895",
-    title: {
-      en: "Microbiologist and Vaccine Developer",
-      hy: "Միկրոբների հետազոտող և պատվաստանյութերի ստեղծող",
-    },
-    information: {
-      en: "Developed germ theory, pasteurization, and multiple vaccines.",
-      hy: "Ստեղծել է միկրոբների տեսությունը, պաստյորացումը և բազմաթիվ պատվաստանյութեր։",
-    },
-    image: "/images/pasteur.jpg",
-    link: "/doctors/pasteur",
+    group: { en: "French Doctors", hy: "Ֆրանսիացի բժիշկներ" }, // Ճշգրտում
+    doctors: [
+      {
+        name: { en: "Louis Pasteur", hy: "Լուի Պաստյոր" },
+        lifespan: { en: "1822–1895", hy: "1822–1895 թթ." }, // Ճշգրտում
+        title: {
+          en: "Microbiologist and Vaccine Developer",
+          hy: "Մանրէաբան և պատվաստանյութերի մշակող", // Ճշգրտում
+        },
+        information: {
+          en: "Developed germ theory, pasteurization, and multiple vaccines.",
+          hy: "Մշակել է մանրէաբանական տեսությունը, պաստերիզացիան և բազմաթիվ պատվաստանյութեր։",
+        },
+        image: "/images/pasteur.jpg",
+        link: "/doctors/pasteur",
+      },
+      {
+        name: {
+          en: "Pierre Charles Alexandre Louis",
+          hy: "Պիեռ Շառլ Ալեքսանդր Լուի", // Ճշգրտում
+        },
+        lifespan: { en: "1787–1872", hy: "1787–1872 թթ." }, // Ճշգրտում
+        title: {
+          en: "Physician and Statistician",
+          hy: "Բժիշկ և վիճակագիր", // Ճշգրտում
+        },
+        information: {
+          en: "Introduced numerical methods in medicine; studied bloodletting effectiveness.",
+          hy: "Ներմուծել է թվային մեթոդներ բժշկության մեջ. ուսումնասիրել է արյունառության արդյունավետությունը։",
+        },
+        image: "/images/alexandre-louis.jpg",
+        link: "/doctors/pierre-louis",
+      },
+    ],
   },
   {
-    id: 4,
-    name: {
-      en: "Robert Koch",
-      hy: "Ռոբերտ Կոխ",
-    },
-    lifespan: "1843–1910",
-    title: {
-      en: "Discoverer of Disease Bacteria",
-      hy: "Բակտերիաների հայտնագործող",
-    },
-    information: {
-      en: "Discovered the bacteria causing tuberculosis, cholera, and anthrax.",
-      hy: "Հայտնաբերել է տուբերկուլոզի, խոլերայի և սիբիրախտի բակտերիաները։",
-    },
-    image: "/images/koch.jpg",
-    link: "/doctors/koch",
+    group: { en: "German Doctors", hy: "Գերմանացի բժիշկներ" }, // Ճշգրտում
+    doctors: [
+      {
+        name: { en: "Rudolf Virchow", hy: "Ռուդոլֆ Վիրխով" },
+        lifespan: { en: "1821–1902", hy: "1821–1902 թթ." }, // Ճշգրտում
+        title: {
+          en: "Father of Cellular Pathology",
+          hy: "Բջջային պաթոլոգիայի հայր", // Ճշգրտում՝ հոդը հեռացվել է
+        },
+        information: {
+          en: "Established that diseases arise primarily at the cellular level; pioneer in pathology.",
+          hy: "Հիմնադրել է, որ հիվանդությունները հիմնականում առաջանում են բջջային մակարդակում. պաթոլոգիայի նախակարապետ:",
+        },
+        image: "/images/virchow.jpg",
+        link: "/doctors/rudolf-virchow",
+      },
+      {
+        name: { en: "Robert Koch", hy: "Ռոբերտ Կոխ" }, // Ճշգրտում
+        lifespan: { en: "1843–1910", hy: "1843–1910 թթ." }, // Ճշգրտում
+        title: { en: "Microbiologist", hy: "Մանրէաբան" }, // Ճշգրտում
+        information: {
+          en: "Discovered the bacteria causing tuberculosis and cholera; developed Koch's postulates.",
+          hy: "Բացահայտել է տուբերկուլյոզ և խոլերա հարուցող բակտերիաները. մշակել է Կոխի պոստուլատները։", // Ճշգրտում
+        },
+        image: "/images/koch.jpg",
+        link: "/doctors/robert-koch",
+      },
+    ],
   },
   {
-    id: 5,
-    name: {
-      en: "Joseph Lister",
-      hy: "Ջոզեֆ Լիստեր",
-    },
-    lifespan: "1827–1912",
-    title: {
-      en: "Pioneer of Antiseptic Surgery",
-      hy: "Անտիսեպտիկ վիրաբուժության pionier",
-    },
-    information: {
-      en: "Applied antiseptic techniques in surgery to prevent infections.",
-      hy: "Վիրաբուժության մեջ կիրառել է անտիսեպտիկ տեխնիկա վարակների կանխարգելման համար։",
-    },
-    image: "/images/lister.jpg",
-    link: "/doctors/lister",
-  },
-  {
-    id: 6,
-    name: {
-      en: "John Snow",
-      hy: "Ջոն Սնոու",
-    },
-    lifespan: "1813–1858",
-    title: {
-      en: "Founder of Epidemiology",
-      hy: "Համաճարակաբանության հիմնադիր",
-    },
-    information: {
-      en: "Identified the source of a cholera outbreak and advanced epidemiology.",
-      hy: "Բացահայտել է խոլերայի աղբյուրը և զարգացրել համաճարակաբանությունը։",
-    },
-    image: "/images/john-snow.jpg",
-    link: "/doctors/john-snow",
-  },
-  {
-    id: 7,
-    name: {
-      en: "Florence Nightingale",
-      hy: "Ֆլորենս Նայթինգեյլ",
-    },
-    lifespan: "1820–1910",
-    title: {
-      en: "Founder of Modern Nursing",
-      hy: "Ժամանակակից քույրական գործի հիմնադիր",
-    },
-    information: {
-      en: "Improved hospital hygiene and professional nursing practices.",
-      hy: "Բարելավել է հիվանդանոցների հիգիենան և քույրական գործի պրակտիկան։",
-    },
-    image: "/images/nightingale.jpg",
-    link: "/doctors/nightingale",
-  },
-  {
-    id: 8,
-    name: {
-      en: "Elizabeth Blackwell",
-      hy: "Էլիզաբեթ Բլեքուել",
-    },
-    lifespan: "1821–1910",
-    title: {
-      en: "First Female Physician in the USA",
-      hy: "Առաջին կին բժիշկ ԱՄՆ-ում",
-    },
-    information: {
-      en: "Pioneered women in medicine and broke gender barriers in healthcare.",
-      hy: "Առաջնորդել է կանանց բժշկության ոլորտում և հաղթահարել սեռային սահմանափակումները։",
-    },
-    image: "/images/blackwell.jpg",
-    link: "/doctors/blackwell",
+    group: { en: "Italian Doctors", hy: "Իտալացի բժիշկներ" }, // Ճշգրտում
+    doctors: [
+      {
+        name: { en: "Alessandro Volta", hy: "Ալեսանդրո Վոլտա" },
+        lifespan: { en: "1745–1827", hy: "1745–1827 թթ." }, // Ճշգրտում
+        title: {
+          en: "Physicist and Medical Researcher",
+          hy: "Ֆիզիկոս և բժշկական հետազոտող",
+        },
+        information: {
+          en: "Though primarily a physicist, his work on electricity contributed to medical instruments and studies.",
+          hy: "Չնայած հիմնականում ֆիզիկոս էր, նրա աշխատանքը էլեկտրականության ոլորտում նպաստեց բժշկական սարքերի և հետազոտությունների զարգացմանը։",
+        },
+        image: "/images/volta.jpg",
+        link: "/doctors/alessandro-volta",
+      },
+    ],
   },
 ];
 
