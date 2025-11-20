@@ -12,7 +12,7 @@ import centuries20_21 from "../../data/20_21centuries";
 import armenian_doctors from "../../data/armenian_doctors";
 
 const ERAS_DATA = [
-  { titleEn: "Ancient Century", titleHy: "Հին ժամանակներ", data: ancientAges },
+  { titleEn: "Ancient Ages", titleHy: "Հին ժամանակներ", data: ancientAges },
   {
     titleEn: "Middle Ages",
     titleHy: "Միջնադարյան ժամանակներ",

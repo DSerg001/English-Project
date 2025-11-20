@@ -2,7 +2,7 @@
 
 const armenian_doctors = [
   {
-    group: { en: "Ancient Era", hy: "Հին դարաշրջան" }, // Ճշգրտում
+    group: { en: "Ancient Ages", hy: "Հին դարաշրջան" }, // Ճշգրտում
     doctors: [
       {
         name: { en: "Mihr Nerseh", hy: "Միհր Ներսեհ" },
