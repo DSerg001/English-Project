@@ -15,8 +15,7 @@ const armenian_doctors = [
           en: "Systematized medicinal herbs and prepared healing mixtures; early contribution to pharmacology.",
           hy: "Դեղաբույսերի կիրառման համակարգում, բուժական խառնուրդների պատրաստում (վաղ դեղագիտության ներդրում)", // Ճշգրտում
         },
-        image: "/images/mihr-nerseh.jpg",
-        link: "/doctors/mihr-nerseh",
+        link: "https://en.wikipedia.org/wiki/Mihr-Narseh",
       },
     ],
   },
@@ -34,8 +33,9 @@ const armenian_doctors = [
           en: "Author of 'Relief of Fevers,' the first Armenian scientific medical textbook; introduced new diagnostic methods and early descriptions of infection spread.",
           hy: "«Ջերմանց մխիթարություն» գիտական բժշկության առաջին հայկական դասագիրք. հիվանդությունների դասակարգման նոր մոտեցում, վարակների տարածման վաղ նկարագրություն։", // Ճշգրտում
         },
-        image: "/images/heratsi.jpg",
-        link: "/doctors/mkhitar-heratsi",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/%D5%84%D5%AD%D5%AB%D5%A9%D5%A1%D6%80_%D5%80%D5%A5%D6%80%D5%A1%D6%81%D5%B8%D6%82_%D5%AF%D5%AB%D5%BD%D5%A1%D5%B6%D5%A4%D6%80%D5%AB4.jpg/500px-%D5%84%D5%AD%D5%AB%D5%A9%D5%A1%D6%80_%D5%80%D5%A5%D6%80%D5%A1%D6%81%D5%B8%D6%82_%D5%AF%D5%AB%D5%BD%D5%A1%D5%B6%D5%A4%D6%80%D5%AB4.jpg",
+        link: "https://en.wikipedia.org/wiki/Mkhitar_Heratsi",
       },
       {
         name: { en: "Amirdovlat Amasiatsi", hy: "Ամիրդովլաթ Ամասիացի" },
@@ -48,8 +48,9 @@ const armenian_doctors = [
           en: "Author of 'Useless for the Ignorant'; classified diseases, described over 3000 herbs and medicines, proposed pharmaceutical standards, identified toxic plants.",
           hy: "«Անպետ հիմարներին» աշխատության հեղինակ. հիվանդությունների դասակարգում, 3000-ից ավելի դեղաբույսերի նկարագրություն, դեղագիտական ստանդարտներ, թունավոր բույսերի ազդեցությունների բացահայտում։", // Ճշգրտում
         },
-        image: "/images/amirdovlat.jpg",
-        link: "/doctors/amirdovlat-amasiatsi",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Amirdovlat_Amasiaci%2C_Fig._1%2C_Soviet_Armenian_Encyclopedia%2C_v._1%2C_p._321.jpg/375px-Amirdovlat_Amasiaci%2C_Fig._1%2C_Soviet_Armenian_Encyclopedia%2C_v._1%2C_p._321.jpg",
+        link: "https://en.wikipedia.org/wiki/Amirdovlat_of_Amasia#:~:text=Amirdovlat%20Amasiatsi%20(Armenian%3A%20%D4%B1%D5%B4%D5%AB%D6%80%D5%A4%D5%B8%D5%BE%D5%AC%D5%A1%D5%A9%20%D4%B1%D5%B4%D5%A1%D5%BD%D5%AB%D5%A1%D6%81%D5%AB,and%20some%20at%20ordinary%20people.",
       },
       {
         name: { en: "Hovhannes Erznkatsi", hy: "Հովհաննես Երզնկացի" },
@@ -59,8 +60,9 @@ const armenian_doctors = [
           en: "Developed medical methodology and advanced hygienic practices.",
           hy: "Բուժման մեթոդաբանություն և առողջապահական-հիգիենիկ առաջադեմ մոտեցումներ։",
         },
-        image: "/images/erznkatsi.jpg",
-        link: "/doctors/hovhannes-erznkatsi",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/9/9b/Hovhannes_Pluz_Yerznkatsi.jpg",
+        link: "https://en.wikipedia.org/wiki/Hovhannes_Erznkatsi",
       },
       {
         name: { en: "Anania Shirakatsi", hy: "Անանիա Շիրակացի" },
@@ -73,153 +75,9 @@ const armenian_doctors = [
           en: "Provided explanations of disease causes and functions of the human body.",
           hy: "Հիվանդությունների պատճառների և մարդու մարմնի ֆունկցիաների մասին նկարագրություններ։",
         },
-        image: "/images/shirakatsi.jpg",
-        link: "/doctors/anania-shirakatsi",
-      },
-    ],
-  },
-  {
-    group: {
-      en: "Renaissance / 16th–17th Centuries",
-      hy: "Վերածնունդ / 16–17-րդ դարեր", // Ճշգրտում
-    },
-    doctors: [
-      {
-        name: { en: "Hovsep Karapetyan", hy: "Հովսեփ Կարապետյան" },
-        lifespan: { en: "17th century", hy: "XVII դար" },
-        title: { en: "Royal physician", hy: "Արքունի բժիշկ" },
-        information: {
-          en: "Authored medical manuals and contributed to the development of herbal medicine.",
-          hy: "Բուժական ձեռնարկների հեղինակ, նպաստել է խոտաբուժության զարգացմանը։",
-        },
-        image: "/images/karapetyan.jpg",
-        link: "/doctors/hovsep-karapetyan",
-      },
-      {
-        name: {
-          en: "Amirkhanyan Medical Dynasty",
-          hy: "Ամիրխանյանների բժշկական դինաստիա",
-        },
-        lifespan: { en: "16th–17th centuries", hy: "XVI–XVII դդ." },
-        title: {
-          en: "Court physicians in Persia",
-          hy: "Պարսկական արքունիքի բժիշկներ",
-        },
-        information: {
-          en: "Introduced new surgical techniques across the Middle East.",
-          hy: "Նոր վիրաբուժական մեթոդների ներդրում Մերձավոր Արևելքում։",
-        },
-        image: "/images/amirkhanyan.jpg",
-        link: "/doctors/amirkhanyan-dynasty",
-      },
-    ],
-  },
-  {
-    group: { en: "18th–19th Centuries", hy: "18–19-րդ դարեր" },
-    doctors: [
-      {
-        name: { en: "Stepanos Shahumyan", hy: "Ստեփանոս Շահումյան" },
-        lifespan: { en: "18th century", hy: "XVIII դար" },
-        title: { en: "Physician-pharmacist", hy: "Բժիշկ-դեղագետ" }, // Ճշգրտում
-        information: {
-          en: "Studied the chemical properties of medicinal plants.",
-          hy: "Ուսումնասիրել է դեղաբույսերի քիմիական հատկությունները։",
-        },
-        image: "/images/shahumyan.jpg",
-        link: "/doctors/stepanos-shahumyan",
-      },
-      {
-        name: { en: "Hovhannes Alekyan", hy: "Հովհաննես Ալեքյան" },
-        lifespan: { en: "18th century", hy: "XVIII դար" },
-        title: { en: "Physician, pharmacist", hy: "Բժիշկ, դեղագետ" }, // Ճշգրտում
-        information: {
-          en: "Authored pharmacological guides and classified medicinal herbs.",
-          hy: "Դեղաբանական ձեռնարկների հեղինակ, դեղաբույսերի դասակարգում։",
-        },
-        image: "/images/alekyan.jpg",
-        link: "/doctors/hovhannes-alekyan",
-      },
-    ],
-  },
-  {
-    group: { en: "19th–20th Centuries", hy: "19–20-րդ դարեր" },
-    doctors: [
-      {
-        name: { en: "Yeghishe Kartamishyan", hy: "Եղիշե Քարտամիշյան" },
-        lifespan: { en: "1834–1889", hy: "1834–1889 թթ." }, // Ճշգրտում
-        title: { en: "Surgeon", hy: "Վիրաբույժ" },
-        information: {
-          en: "Developed new surgical methods; one of the first professional surgeons in Eastern Armenia.",
-          hy: "Վիրաբուժական նոր մեթոդների հեղինակ. Արևելյան Հայաստանի առաջին պրոֆեսիոնալ վիրաբույժներից մեկն է։",
-        },
-        image: "/images/kartamishyan.jpg",
-        link: "/doctors/yeghishe-kartamishyan",
-      },
-      {
-        name: { en: "Gevorg Melik-Karamyan", hy: "Գևորգ Մելիք-Քարամյան" },
-        lifespan: {
-          en: "Late 19th – early 20th century",
-          hy: "XIX դ. վերջ – XX դ. սկիզբ",
-        },
-        title: { en: "Military surgeon", hy: "Ռազմական վիրաբույժ" },
-        information: {
-          en: "Improved field surgery techniques.",
-          hy: "Բարելավել է դաշտային վիրաբուժության տեխնիկաները։",
-        },
-        image: "/images/melik-karamyan.jpg",
-        link: "/doctors/gevorg-melik-karamyan",
-      },
-    ],
-  },
-  {
-    group: { en: "20th–21st Centuries", hy: "20–21-րդ դարեր" },
-    doctors: [
-      {
-        name: { en: "Alexander Manukyan", hy: "Ալեքսանդր Մանուկյան" },
-        lifespan: { en: "1920–1990", hy: "1920–1990 թթ." }, // Ճշգրտում
-        title: {
-          en: "General and cardiac surgeon",
-          hy: "Ընդհանուր և սրտային վիրաբույժ",
-        },
-        information: {
-          en: "Implemented several innovative surgical techniques in the USSR.",
-          hy: "Ներդրել է մի շարք նորարարական վիրահատական մեթոդներ ԽՍՀՄ-ում։",
-        },
-        image: "/images/manukyan.jpg",
-        link: "/doctors/alexander-manukyan",
-      },
-      {
-        name: { en: "Ara Zavaryan", hy: "Արա Զավարյան" },
-        lifespan: { en: "1960–2020", hy: "1960–2020 թթ." }, // Ճշգրտում
-        title: { en: "Oncologist-researcher", hy: "Ուռուցքաբան-հետազոտող" },
-        information: {
-          en: "Made discoveries in molecular mechanisms of cancer cell development.",
-          hy: "Բացահայտումներ է կատարել քաղցկեղային բջիջների զարգացման մոլեկուլային մեխանիզմներում։",
-        },
-        image: "/images/zavaryan.jpg",
-        link: "/doctors/ara-zavaryan",
-      },
-      {
-        name: { en: "Hayk Kotanyan", hy: "Հայկ Կոտանյան" },
-        lifespan: { en: "1970–", hy: "1970 թ.-ից" }, // Ճշգրտում
-        title: { en: "Neurosurgeon", hy: "Նյարդավիրաբույժ" },
-        information: {
-          en: "Innovator in minimally invasive spinal and brain surgery.",
-          hy: "Ողնաշարի և գլխուղեղի մինիմալ ինվազիվ վիրաբուժության ոլորտի նորարար է։",
-        },
-        image: "/images/kotanyan.jpg",
-        link: "/doctors/hayk-kotanyan",
-      },
-      {
-        name: { en: "Ara Abrahamyan (MD)", hy: "Արա Աբրահամյան (բ.գ.դ.)" }, // Ճշգրտում
-        lifespan: { en: "1975–", hy: "1975 թ.-ից" }, // Ճշգրտում
-        title: { en: "Cardiologist", hy: "Սրտաբան" },
-        information: {
-          en: "Developed new mechanisms for treating hypertension and myocardial edema.",
-          hy: "Մշակել է զարկերակային գերճնշման և սրտամկանի այտուցների բուժման նոր մեխանիզմներ։",
-        },
-        image: "/images/abrahamyan.jpg",
-        link: "/doctors/ara-abrahamyan",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/2014_Erywa%C5%84%2C_Matenadaran_%2807%29.jpg/500px-2014_Erywa%C5%84%2C_Matenadaran_%2807%29.jpg",
+        link: "https://en.wikipedia.org/wiki/Anania_Shirakatsi",
       },
     ],
   },

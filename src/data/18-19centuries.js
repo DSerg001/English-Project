@@ -15,8 +15,9 @@ const centuries18_19Doctors = [
           en: "Created the first smallpox vaccine in 1796.",
           hy: "1796 թվականին ստեղծել է ծաղկի դեմ առաջին պատվաստանյութը։", // Ճշգրտում
         },
-        image: "/images/jenner.jpg",
-        link: "/doctors/jenner",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Edward_Jenner.jpg/500px-Edward_Jenner.jpg",
+        link: "https://en.wikipedia.org/wiki/Edward_Jenner",
       },
       {
         name: { en: "John Snow", hy: "Ջոն Սնոու" },
@@ -29,8 +30,9 @@ const centuries18_19Doctors = [
           en: "Identified the source of a cholera outbreak and advanced epidemiology.",
           hy: "Բացահայտել է խոլերայի համաճարակի աղբյուրը և զարգացրել համաճարակաբանությունը։",
         },
-        image: "/images/john-snow.jpg",
-        link: "/doctors/john-snow",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/John_Snow.jpg/500px-John_Snow.jpg",
+        link: "https://en.wikipedia.org/wiki/John_Snow",
       },
     ],
   },
@@ -48,8 +50,9 @@ const centuries18_19Doctors = [
           en: "Emphasized the importance of hand washing to prevent infections.",
           hy: "Կարևորել է վարակների կանխարգելման համար ձեռքերը լվանալու նշանակությունը։",
         },
-        image: "/images/semmelweis.jpg",
-        link: "/doctors/ignaz-semmelweis",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Borsos_%26_Doctor_Semmelweis_Ign%C3%A1c_cropped.jpg/500px-Borsos_%26_Doctor_Semmelweis_Ign%C3%A1c_cropped.jpg",
+        link: "https://en.wikipedia.org/wiki/Ignaz_Semmelweis",
       },
     ],
   },
@@ -67,8 +70,9 @@ const centuries18_19Doctors = [
           en: "Developed germ theory, pasteurization, and multiple vaccines.",
           hy: "Մշակել է մանրէաբանական տեսությունը, պաստերիզացիան և բազմաթիվ պատվաստանյութեր։",
         },
-        image: "/images/pasteur.jpg",
-        link: "/doctors/pasteur",
+        image:
+          "https://hips.hearstapps.com/hmg-prod/images/gettyimages-2716366.jpg?resize=1800:*",
+        link: "https://en.wikipedia.org/wiki/Louis_Pasteur",
       },
       {
         name: {
@@ -84,8 +88,9 @@ const centuries18_19Doctors = [
           en: "Introduced numerical methods in medicine; studied bloodletting effectiveness.",
           hy: "Ներմուծել է թվային մեթոդներ բժշկության մեջ. ուսումնասիրել է արյունառության արդյունավետությունը։",
         },
-        image: "/images/alexandre-louis.jpg",
-        link: "/doctors/pierre-louis",
+        image:
+          "https://res.cloudinary.com/ultrasimplified/images/c_scale,w_350,h_507,dpr_1.25/f_auto,q_auto/v1698679678/james-lind/louis_portrait/louis_portrait.jpg?_i=AA",
+        link: "https://en.wikipedia.org/wiki/Pierre_Charles_Alexandre_Louis",
       },
     ],
   },
@@ -103,8 +108,9 @@ const centuries18_19Doctors = [
           en: "Established that diseases arise primarily at the cellular level; pioneer in pathology.",
           hy: "Հիմնադրել է, որ հիվանդությունները հիմնականում առաջանում են բջջային մակարդակում. պաթոլոգիայի նախակարապետ:",
         },
-        image: "/images/virchow.jpg",
-        link: "/doctors/rudolf-virchow",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Rudolf_Virchow_NLM3.jpg/500px-Rudolf_Virchow_NLM3.jpg",
+        link: "https://en.wikipedia.org/wiki/Rudolf_Virchow",
       },
       {
         name: { en: "Robert Koch", hy: "Ռոբերտ Կոխ" }, // Ճշգրտում
@@ -114,8 +120,8 @@ const centuries18_19Doctors = [
           en: "Discovered the bacteria causing tuberculosis and cholera; developed Koch's postulates.",
           hy: "Բացահայտել է տուբերկուլյոզ և խոլերա հարուցող բակտերիաները. մշակել է Կոխի պոստուլատները։", // Ճշգրտում
         },
-        image: "/images/koch.jpg",
-        link: "/doctors/robert-koch",
+        image: "https://m.media-amazon.com/images/I/71HcIlgZeRL._AC_SX679_.jpg",
+        link: "/https://en.wikipedia.org/wiki/Robert_Koch",
       },
     ],
   },
@@ -133,8 +139,9 @@ const centuries18_19Doctors = [
           en: "Though primarily a physicist, his work on electricity contributed to medical instruments and studies.",
           hy: "Չնայած հիմնականում ֆիզիկոս էր, նրա աշխատանքը էլեկտրականության ոլորտում նպաստեց բժշկական սարքերի և հետազոտությունների զարգացմանը։",
         },
-        image: "/images/volta.jpg",
-        link: "/doctors/alessandro-volta",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Alessandro_Volta.jpeg/375px-Alessandro_Volta.jpeg",
+        link: "https://en.wikipedia.org/wiki/Alessandro_Volta",
       },
     ],
   },

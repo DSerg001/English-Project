@@ -15,8 +15,9 @@ const centuries20_21Doctors = [
           en: "Developed the polio vaccine, preventing widespread paralysis.",
           hy: "Մշակել է պոլիոմիելիտի պատվաստանյութը՝ կանխարգելելով զանգվածային լուծանքը։", // Ճշգրտում
         },
-        image: "/images/salk.jpg",
-        link: "/doctors/salk",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Jonas_Salk_candid.jpg/500px-Jonas_Salk_candid.jpg",
+        link: "https://en.wikipedia.org/wiki/Jonas_Salk",
       },
       {
         name: { en: "Elizabeth Blackburn", hy: "Էլիզաբեթ Բլեքբերն" },
@@ -26,8 +27,9 @@ const centuries20_21Doctors = [
           en: "Discovered telomerase, enzyme critical for chromosome protection; Nobel laureate.",
           hy: "Բացահայտել է թելոմերազը՝ քրոմոսոմների պաշտպանության համար կրիտիկական ֆերմենտ. Նոբելյան մրցանակակիր է։",
         },
-        image: "/images/elizabeth-blackburn.jpg",
-        link: "/doctors/elizabeth-blackburn",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Elizabeth_Blackburn_in_2024_by_Christopher_Michel.jpg/500px-Elizabeth_Blackburn_in_2024_by_Christopher_Michel.jpg",
+        link: "https://en.wikipedia.org/wiki/Elizabeth_Blackburn",
       },
       {
         name: { en: "Paul Farmer", hy: "Փոլ Ֆարմեր" },
@@ -40,25 +42,9 @@ const centuries20_21Doctors = [
           en: "Pioneered healthcare for impoverished populations; co-founded Partners In Health.",
           hy: "Նախաձեռնել է առողջապահական ծառայություններ աղքատ բնակչության համար. «Partners In Health»-ի համահիմնադիրն է։",
         },
-        image: "/images/paul-farmer.jpg",
-        link: "/doctors/paul-farmer",
-      },
-      {
-        name: {
-          en: "Katalin Karikó & Drew Weissman",
-          hy: "Կատալին Կարիկո և Դրյու Վայսման", // Ճշգրտում
-        },
-        lifespan: { en: "21st century", hy: "21-րդ դար" },
-        title: {
-          en: "mRNA Vaccine Technology Developers",
-          hy: "mRNA պատվաստանյութերի տեխնոլոգիայի մշակողներ", // Ճշգրտում
-        },
-        information: {
-          en: "Developed mRNA vaccine technology used for COVID-19 vaccines.",
-          hy: "Մշակել են mRNA պատվաստանյութերի տեխնոլոգիան, որն օգտագործվում է COVID-19-ի դեմ պատվաստանյութերի համար։",
-        },
-        image: "/images/kariko-weissman.jpg",
-        link: "/doctors/kariko-weissman",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Paul_Farmer_2011.jpg/500px-Paul_Farmer_2011.jpg",
+        link: "https://en.wikipedia.org/wiki/Paul_Farmer",
       },
       {
         name: { en: "Barry Marshall", hy: "Բարրի Մարշալ" }, // Ճշգրտում
@@ -71,8 +57,9 @@ const centuries20_21Doctors = [
           en: "Proved that Helicobacter pylori causes ulcers.",
           hy: "Ապացուցել է, որ Helicobacter pylori-ն խոցերի պատճառ է։",
         },
-        image: "/images/marshall.jpg",
-        link: "/doctors/marshall",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Barry_J_Marshall.jpg/500px-Barry_J_Marshall.jpg",
+        link: "https://en.wikipedia.org/wiki/Barry_Marshall",
       },
       {
         name: { en: "Steven Rosenberg", hy: "Սթիվեն Ռոզենբերգ" },
@@ -85,8 +72,9 @@ const centuries20_21Doctors = [
           en: "Advanced cancer treatment using immunotherapy techniques.",
           hy: "Առաջընթաց է գրանցել քաղցկեղի բուժման մեջ՝ իմունոթերապիայի մեթոդների կիրառմամբ։",
         },
-        image: "/images/rosenberg.jpg",
-        link: "/doctors/rosenberg",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Nci-vol-7247-300_steven_rosenberg.jpg/500px-Nci-vol-7247-300_steven_rosenberg.jpg",
+        link: "https://en.wikipedia.org/wiki/Steven_Rosenberg",
       },
     ],
   },
@@ -107,25 +95,9 @@ const centuries20_21Doctors = [
           en: "Discovered penicillin in 1928, revolutionizing antibiotics.",
           hy: "1928 թվականին հայտնաբերել է պենիցիլինը, ինչը հեղափոխություն է բերել հակաբիոտիկների ոլորտում։",
         },
-        image: "/images/fleming.jpg",
-        link: "/doctors/fleming",
-      },
-      {
-        name: {
-          en: "Rosalind Franklin, James Watson, Francis Crick",
-          hy: "Ռոզալինդ Ֆրանկլին, Ջեյմս Ուոթսոն, Ֆրենսիս Քրիք", // Ճշգրտում
-        },
-        lifespan: { en: "1953", hy: "1953 թ." }, // Ճշգրտում
-        title: {
-          en: "Discoverers of DNA Structure",
-          hy: "ԴՆԹ-ի կառուցվածքի հայտնագործողներ",
-        },
-        information: {
-          en: "Identified the double-helix structure of DNA.",
-          hy: "Բացահայտել են ԴՆԹ-ի կրկնակի պարույրաձև կառուցվածքը։", // Ճշգրտում
-        },
-        image: "/images/dna.jpg",
-        link: "/doctors/dna-discovery",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Synthetic_Production_of_Penicillin_TR1468.jpg/500px-Synthetic_Production_of_Penicillin_TR1468.jpg",
+        link: "https://en.wikipedia.org/wiki/Alexander_Fleming",
       },
       {
         name: {
@@ -138,24 +110,9 @@ const centuries20_21Doctors = [
           en: "Nobel laureate for discoveries in genetic control of embryonic development.",
           hy: "Նոբելյան մրցանակակիր՝ սաղմի զարգացման գենետիկական վերահսկողության բացահայտումների համար։",
         },
-        image: "/images/christiane-nusslein.jpg",
-        link: "/doctors/christiane-nusslein-volhard",
-      },
-    ],
-  },
-  {
-    group: { en: "German Doctors", hy: "Գերմանացի բժիշկներ" }, // Ճշգրտում
-    doctors: [
-      {
-        name: { en: "Christoph Weigel", hy: "Քրիստոֆ Վեյգել" },
-        lifespan: { en: "1930–2019", hy: "1930–2019 թթ." }, // Ճշգրտում
-        title: { en: "Cardiologist", hy: "Սրտաբան" },
-        information: {
-          en: "Contributed to modern cardiology and cardiovascular surgery advancements.",
-          hy: "Նպաստել է ժամանակակից սրտաբանությանը և սրտանոթային վիրաբուժության զարգացմանը։",
-        },
-        image: "/images/christoph-weigel.jpg",
-        link: "/doctors/christoph-weigel",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Christiane_N%C3%BCsslein-Volhard_mg_4372.jpg/500px-Christiane_N%C3%BCsslein-Volhard_mg_4372.jpg",
+        link: "https://en.wikipedia.org/wiki/Christiane_N%C3%BCsslein-Volhard",
       },
     ],
   },
@@ -173,8 +130,9 @@ const centuries20_21Doctors = [
           en: "Discovered induced pluripotent stem cells (iPSCs); Nobel laureate.",
           hy: "Բացահայտել է ինդուկցիայի ենթարկված պլյուրիպոտենտ ցողունային բջիջները (iPSCs). Նոբելյան մրցանակակիր է։", // Ճշգրտում
         },
-        image: "/images/shinya-yamanaka.jpg",
-        link: "/doctors/shinya-yamanaka",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Shinya_Yamanaka_20141226.jpg/500px-Shinya_Yamanaka_20141226.jpg",
+        link: "https://en.wikipedia.org/wiki/Shinya_Yamanaka",
       },
     ],
   },
@@ -189,8 +147,9 @@ const centuries20_21Doctors = [
           en: "Developed diphtheria antitoxin; first Nobel Prize in Physiology or Medicine.",
           hy: "Մշակել է դիֆտերիայի հակաթույնը. առաջին Նոբելյան մրցանակը ֆիզիոլոգիայի կամ բժշկության ոլորտում։",
         },
-        image: "/images/emil-behring.jpg",
-        link: "/doctors/emil-von-behring",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Emil_von_Behring_sitzend.jpg/500px-Emil_von_Behring_sitzend.jpg",
+        link: "https://en.wikipedia.org/wiki/Emil_von_Behring",
       },
     ],
   },

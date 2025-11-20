@@ -15,8 +15,9 @@ const renaissance = [
           en: "Wrote 'De humani corporis fabrica', revolutionizing anatomical studies.",
           hy: "Գրել է «De humani corporis fabrica»-ն, որը հեղափոխություն մտցրեց անատոմիական ուսումնասիրություններում։",
         },
-        image: "/images/vesalius.jpg",
-        link: "/doctors/andreas-vesalius",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Man_dressed_in_Black_by_Calcar_%28Hermitage%29.jpg/500px-Man_dressed_in_Black_by_Calcar_%28Hermitage%29.jpg",
+        link: "https://en.wikipedia.org/wiki/Andreas_Vesalius",
       },
       {
         name: { en: "Gabriele Falloppio", hy: "Գաբրիելե Ֆալոպպիո" },
@@ -26,8 +27,9 @@ const renaissance = [
           en: "Described the Fallopian tubes and contributed to reproductive anatomy.",
           hy: "Նկարագրել է Ֆալոպպիոյի խողովակները և ներդրում ունեցել վերարտադրողական անատոմիայում։",
         },
-        image: "/images/falloppio.jpg",
-        link: "/doctors/gabriele-falloppio",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/9/9e/Gabriele_Falloppio.jpg",
+        link: "https://en.wikipedia.org/wiki/Gabriele_Falloppio",
       },
       {
         name: { en: "Realdo Colombo", hy: "Ռեալդո Կոլոմբո" },
@@ -37,8 +39,9 @@ const renaissance = [
           en: "Studied pulmonary circulation and refined anatomical methods.",
           hy: "Ուսումնասիրել է թոքային շրջանառությունը և կատարելագործել անատոմիական մեթոդները։",
         },
-        image: "/images/realdo-colombo.jpg",
-        link: "/doctors/realdo-colombo",
+        image:
+          "https://www.researchgate.net/publication/268786538/figure/fig7/AS:295493214195731@1447462480908/Realdo-Colombo-anatomy-professor-at-the-University-of-Padua-decribed-the-pulmonary.png",
+        link: "https://en.wikipedia.org/wiki/Realdo_Colombo",
       },
       {
         name: { en: "Leonardo Fioravanti", hy: "Լեոնարդո Ֆիորավանտի" },
@@ -51,8 +54,9 @@ const renaissance = [
           en: "Wrote influential medical texts and practiced medicine in Italy.",
           hy: "Գրել է ազդեցիկ բժշկական աշխատություններ և զբաղվել բժշկությամբ Իտալիայում։",
         },
-        image: "/images/leonardo-fioravanti.jpg",
-        link: "/doctors/leonardo-fioravanti",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/b/b0/Leonardo_Fioravanti.jpg",
+        link: "https://en.wikipedia.org/wiki/Leonardo_Fioravanti_(doctor)",
       },
     ],
   },
@@ -67,8 +71,9 @@ const renaissance = [
           en: "Developed modern surgical techniques and improved battlefield medicine.",
           hy: "Մշակել է ժամանակակից վիրաբուժական մեթոդներ և բարելավել ռազմաճակատի բժշկությունը։",
         },
-        image: "/images/ambroise-pare.jpg",
-        link: "/doctors/ambroise-pare",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Ambroise_Par%C3%A9.jpg/500px-Ambroise_Par%C3%A9.jpg",
+        link: "https://en.wikipedia.org/wiki/Ambroise_Par%C3%A9",
       },
     ],
   },
@@ -83,8 +88,9 @@ const renaissance = [
           en: "Published surgical manuals on wound care and amputation.",
           hy: "Հրատարակել է վիրաբուժական ձեռնարկներ վերքերի բուժման և անդամահատման վերաբերյալ։",
         },
-        image: "/images/juan-de-vigo.jpg",
-        link: "/doctors/juan-de-vigo",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Giovanni_da_Vigo.JPG/375px-Giovanni_da_Vigo.JPG",
+        link: "https://fr.wikipedia.org/wiki/Giovanni_da_Vigo",
       },
     ],
   },
@@ -94,38 +100,14 @@ const renaissance = [
       {
         name: { en: "Paracelsus", hy: "Պարացելսուս" }, // Ճշգրտում
         lifespan: { en: "1493–1541", hy: "1493–1541 թթ." }, // Ճշգրտում
-        title: {
-          en: "Father of Toxicology and Chemical Medicine",
-          hy: "Թունաբանության (Թոքսիկոլոգիայի) և քիմիական բժշկության հայր", // Ճշգրտում՝ հոդը հեռացվել է
-        },
+        title: { en: "Father of Toxicology", hy: "Թունաբանության հայր" }, // Ճշգրտում՝ հոդը հեռացվել է
         information: {
-          en: "Introduced chemical remedies and emphasized observation in medicine.",
-          hy: "Ներդրել է քիմիական դեղամիջոցներ և կարևորել դիտարկումը բժշկության մեջ։",
+          en: "Introduced chemical remedies; emphasized observation and experimentation in medicine.",
+          hy: "Ներմուծել է քիմիական դեղամիջոցներ. կարևորել է դիտարկումն ու փորձարկումը բժշկության մեջ։",
         },
-        image: "/images/paracelsus.jpg",
-        link: "/doctors/paracelsus",
-      },
-    ],
-  },
-  {
-    group: {
-      en: "English Doctors",
-      hy: "Անգլիացի բժիշկներ", // Ճշգրտում
-    },
-    doctors: [
-      {
-        name: { en: "William Harvey", hy: "Ուիլյամ Հարվի" }, // Ճշգրտում
-        lifespan: { en: "1578–1657", hy: "1578–1657 թթ." }, // Ճշգրտում
-        title: {
-          en: "Discoverer of Blood Circulation",
-          hy: "Արյան շրջանառության բացահայտող",
-        },
-        information: {
-          en: "Demonstrated the circulation of blood through the heart and body.",
-          hy: "Ցուցադրել է արյան շրջանառությունը սրտի և մարմնի միջոցով։",
-        },
-        image: "/images/william-harvey.jpg",
-        link: "/doctors/william-harvey",
+        image:
+          "https://merian-alchemie.ub.uni-frankfurt.de/wp-content/uploads/Rubens-Paracelsus_Beitrag-Esposito-1071x1536.jpg",
+        link: "https://en.wikipedia.org/wiki/Paracelsus",
       },
     ],
   },
@@ -143,8 +125,9 @@ const renaissance = [
           en: "Proposed that diseases are caused by transferable particles or 'seeds of contagion'.",
           hy: "Առաջարկել է, որ հիվանդությունները փոխանցվում են մասնիկներով կամ «վարակիչ սերմերով»։",
         },
-        image: "/images/fracastoro.jpg",
-        link: "/doctors/girolamo-fracastoro",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Titian_Girolamo_FracastoroFXD.jpg/500px-Titian_Girolamo_FracastoroFXD.jpg",
+        link: "https://en.wikipedia.org/wiki/Girolamo_Fracastoro",
       },
       {
         name: { en: "Bartolomeo Eustachi", hy: "Բարտոլոմեո Էուստաչի" },
@@ -154,8 +137,9 @@ const renaissance = [
           en: "Known for studies of the ear and heart; Eustachian tube named after him.",
           hy: "Հայտնի է ականջի և սրտի ուսումնասիրություններով. Եվստախյան խողովակը կոչվել է նրա անունով։", // Ճշգրտում
         },
-        image: "/images/bartolomeo-eustachi.jpg",
-        link: "/doctors/bartolomeo-eustachi",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Bartolomeus_Eustachius.jpg/500px-Bartolomeus_Eustachius.jpg",
+        link: "https://en.wikipedia.org/wiki/Bartolomeo_Eustachi",
       },
     ],
   },

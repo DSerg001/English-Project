@@ -15,8 +15,9 @@ const centuries16_17Doctors = [
           en: "Pioneered the study of embryology and venous valves; teacher of William Harvey.",
           hy: "Նախակարապետն է էմբրիոլոգիայի և երակային փականների ուսումնասիրություններում. Ուիլյամ Հարվիի ուսուցիչն էր։", // Ճշգրտում
         },
-        image: "/images/fabrici.jpg",
-        link: "/doctors/girolamo-fabrici",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Girolamo_Fabrizi_d%27Acquapendente.jpg/500px-Girolamo_Fabrizi_d%27Acquapendente.jpg",
+        link: "https://it.wikipedia.org/wiki/Girolamo_Fabrici_d%27Acquapendente",
       },
       {
         name: { en: "Marcello Malpighi", hy: "Մարչելո Մալպիգի" },
@@ -29,8 +30,9 @@ const centuries16_17Doctors = [
           en: "Discovered capillaries connecting arteries and veins; studied lungs and kidneys microscopically.",
           hy: "Բացահայտել է զարկերակները և երակները միացնող մազանոթները. միկրոսկոպիկ ուսումնասիրություններ է կատարել թոքերի և երիկամների վրա։",
         },
-        image: "/images/malpighi.jpg",
-        link: "/doctors/marcello-malpighi",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Marcello_Malpighi_by_Carlo_Cignani.jpg/500px-Marcello_Malpighi_by_Carlo_Cignani.jpg",
+        link: "https://it.wikipedia.org/wiki/Marcello_Malpighi",
       },
     ],
   },
@@ -48,8 +50,9 @@ const centuries16_17Doctors = [
           en: "Demonstrated circulation of blood through the heart and body, revolutionizing physiology.",
           hy: "Ցուցադրել է արյան շրջանառությունը սրտի և մարմնի միջոցով՝ հեղափոխություն մտցնելով ֆիզիոլոգիայում։",
         },
-        image: "/images/william-harvey.jpg",
-        link: "/doctors/william-harvey",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/e/ef/William_Harvey-Foto.jpg",
+        link: "https://en.wikipedia.org/wiki/William_Harvey",
       },
     ],
   },
@@ -67,8 +70,9 @@ const centuries16_17Doctors = [
           en: "Introduced concepts of gas chemistry; studied digestion and metabolism.",
           hy: "Ներմուծել է գազերի քիմիայի հայեցակարգեր. ուսումնասիրել է մարսողությունն ու նյութափոխանակությունը։",
         },
-        image: "/images/van-helmont.jpg",
-        link: "/doctors/jan-baptista-van-helmont",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/1/19/Jan_Baptist_van_Helmont_portrait.jpg",
+        link: "https://en.wikipedia.org/wiki/Jan_Baptist_van_Helmont",
       },
     ],
   },
@@ -83,8 +87,9 @@ const centuries16_17Doctors = [
           en: "Coined the term 'physiology'; studied the human body systematically.",
           hy: "Ներմուծել է «ֆիզիոլոգիա» տերմինը. համակարգված ուսումնասիրություններ է կատարել մարդու մարմնի վերաբերյալ։",
         },
-        image: "/images/fernel.jpg",
-        link: "/doctors/jean-fernel",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Jean_Fernel.jpg/500px-Jean_Fernel.jpg",
+        link: "https://en.wikipedia.org/wiki/Jean_Fernel",
       },
       {
         name: { en: "Guillaume de Baillou", hy: "Գիյոմ դը Բայու" }, // Ճշգրտում
@@ -94,24 +99,9 @@ const centuries16_17Doctors = [
           en: "Studied epidemics, including measles and influenza; founder of clinical epidemiology in France.",
           hy: "Ուսումնասիրել է համաճարակները, ներառյալ կարմրուկը և գրիպը. Ֆրանսիայում կլինիկական համաճարակաբանության հիմնադիրն է։",
         },
-        image: "/images/de-baillou.jpg",
-        link: "/doctors/guillaume-de-baillou",
-      },
-    ],
-  },
-  {
-    group: { en: "Swiss Doctors", hy: "Շվեյցարացի բժիշկներ" }, // Ճշգրտում
-    doctors: [
-      {
-        name: { en: "Paracelsus", hy: "Պարացելսուս" }, // Ճշգրտում
-        lifespan: { en: "1493–1541", hy: "1493–1541 թթ." }, // Ճշգրտում
-        title: { en: "Father of Toxicology", hy: "Թունաբանության հայր" }, // Ճշգրտում՝ հոդը հեռացվել է
-        information: {
-          en: "Introduced chemical remedies; emphasized observation and experimentation in medicine.",
-          hy: "Ներմուծել է քիմիական դեղամիջոցներ. կարևորել է դիտարկումն ու փորձարկումը բժշկության մեջ։",
-        },
-        image: "/images/paracelsus.jpg",
-        link: "/doctors/paracelsus",
+        image:
+          "https://iiif.wellcomecollection.org/thumbs/b33184677_0001.jp2/full/!200,200/0/default.jpg",
+        link: "https://en.wikipedia.org/wiki/Guillaume_de_Baillou",
       },
     ],
   },

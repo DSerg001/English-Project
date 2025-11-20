@@ -161,13 +161,14 @@
 
   .hero-button {
     padding: 10px 20px;
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 @media (max-width: 480px) {
   .video-background {
-    object-fit: cover; /* փոքր էկրանի համար կրկին cover */
-    filter: brightness(0.6) saturate(1); /* ավելի մուգ, տեքստը ընթեռնելի պահելու համար */
+    object-fit: cover;
+    object-position: 35% center; /* ← Վիդեոն մի քիչ դեպի ձախ է սահում */
+    filter: brightness(0.6) saturate(1);
   }
 }

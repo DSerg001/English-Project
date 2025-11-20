@@ -6,7 +6,7 @@ export default function Loader({ loading = true }) {
     loading && (
       <div className="loader-overlay">
         <div className="loader-wrapper">
-          <ClipLoader size={100} color="#89f7fe" />
+          <ClipLoader size={150} color="#89f7fe" />
         </div>
       </div>
     )
