@@ -1,3 +1,7 @@
+/* ====================================== */
+/*         HISTORY SECTION (FINAL)         */
+/* ====================================== */
+
 .history-section {
   padding: 60px 20px;
   background-color: var(--dark-blue);
@@ -26,6 +30,7 @@
   padding: 1rem;
 }
 
+/* Accordion title */
 .history-title {
   display: flex;
   justify-content: space-between;
@@ -51,14 +56,16 @@
   color: #89f7fe;
 }
 
+/* Group Name */
 .doctor-group-name {
   font-size: 1.4rem;
   font-weight: 600;
   color: #89f7fe;
-  margin: 20px 0 10px 0; /* վերևից ու ներքևից բացատ */
-  text-align: center; /* կենտրոնավորում է տեքստը քարտերի վերևում */
+  margin: 20px 0 10px;
+  text-align: center;
 }
-  
+
+/* Grid */
 .cards-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -66,6 +73,7 @@
   margin-top: 1rem;
 }
 
+/* Doctor Card */
 .doctor-card {
   display: flex;
   align-items: flex-start;
@@ -84,6 +92,7 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
 
+/* Doctor Image */
 .doctor-image {
   width: 170px;
   height: 170px;
@@ -92,12 +101,14 @@
   flex-shrink: 0;
 }
 
+/* Info Wrapper */
 .doctor-info-wrapper {
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 
+/* Text styles */
 .doctor-name {
   font-weight: 600;
   font-size: 17px;
@@ -126,6 +137,7 @@
   margin-bottom: 0.5rem;
 }
 
+/* Link button */
 .doctor-link {
   display: inline-block;
   font-weight: 500;
@@ -135,7 +147,7 @@
   color: #fff;
   text-decoration: none;
   border-radius: 8px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   margin-top: auto;
   align-self: flex-end;
   margin-top: 50px;
@@ -146,6 +158,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
+/* Smooth drop animation */
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -157,10 +170,14 @@
   }
 }
 
-/* Responsive */
+/* ====================================== */
+/*              RESPONSIVE CSS            */
+/* ====================================== */
+
+/* Tablets ≤ 768px */
 @media (max-width: 768px) {
   .history-title {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 12px 15px;
   }
 
@@ -182,8 +199,52 @@
   .doctor-info-wrapper {
     align-items: center;
   }
+
   .doctor-link {
     align-self: center;
     margin-top: 0.5rem;
+  }
+}
+
+/* Small mobile ≤ 480px */
+@media (max-width: 480px) {
+  .history-section h2 {
+    font-size: 2rem;
+  }
+
+  .doctor-name {
+    font-size: 16px;
+  }
+
+  .doctor-title {
+    font-size: 0.95rem;
+  }
+
+  .cards-grid {
+    gap: 1rem;
+  }
+
+  .doctor-card {
+    padding: 0.8rem;
+  }
+}
+
+/* Very small screens ≤ 360px */
+@media (max-width: 360px) {
+  .history-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .history-title {
+    font-size: 0.9rem;
+  }
+
+  .doctor-info {
+    font-size: 0.85rem;
+  }
+
+  .doctor-link {
+    font-size: 0.85rem;
+    padding: 7px 16px;
   }
 }

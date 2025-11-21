@@ -1,6 +1,6 @@
 import "./HeroSection.css";
 import { FaAnglesDown } from "react-icons/fa6";
-import medicineVideo from "../../assets/MedicineVideo.mp4"
+import medicineVideo from "../../assets/MedicineVideo.mp4";
 
 function HeroSection({ language }) {
   const scrollToHistory = () => {
@@ -11,19 +11,20 @@ function HeroSection({ language }) {
   const content = {
     en: {
       title: "Welcome to History of Medicine Project Website",
-      description: `Medicine is one of the most important parts of human civilization. 
-      It started thousands of years ago and continues to develop today. 
-      In this project, we explore the history of medicine, scientific facts about 
-      the human body, and present it all in English.`,
+      description: `Medicine has always been one of the pillars of human civilization.
+It began thousands of years ago and continues to evolve every day.
+In this project, we explore the history of medicine, fascinating scientific facts 
+about the human body, and present everything in English.`,
+      slideText: "Watch here",
+      slideLink: "/The-History-and-Science-of-Medicine.pdf",
       projectLead: "Project Lead",
-      leadName: "Narine Asatryan",
+      leadName: "Narineh Asatryan",
       participants: "Project Participants",
       names: [
         "Karina Sargsyan",
-        "Nare Darbinyan",
+        "Nareh Darbinyan",
         "Alla Ayvazyan",
         "Sergey Danielyan",
-        "Karen Mardanyan",
         "Aram Karapetyan",
         "Davit Hovhannisyan",
       ],
@@ -31,10 +32,12 @@ function HeroSection({ language }) {
     },
     hy: {
       title: "Բարի Գալուստ Բժշկության Պատմության Կայք",
-      description: `Բժշկությունը մարդկային քաղաքակրթության ամենակարևոր մասերից մեկն է։ 
-      Այն սկիզբ է առել հազարավոր տարիներ առաջ և շարունակում է զարգանալ նաև այսօր։ 
-      Այս նախագծում մենք ուսումնասիրում ենք բժշկության պատմությունը, 
-      մարդու օրգանիզմի գիտական փաստերը և ներկայացնում ենք դրանք անգլերենով։`,
+      description: `Բժշկությունը մարդկային քաղաքակրթության հիմնասյուներից մեկն է։
+Այն սկսվել է հազարավոր տարիներ առաջ և շարունակաբար զարգանում է մինչ այսօր։
+Այս նախագծում մենք ուսումնասիրում ենք բժշկության պատմությունը, 
+մարդու օրգանիզմի հետաքրքիր գիտական փաստերը և ներկայացնում ենք դրանք անգլերենով։`,
+      slideText: "Դիտեք այստեղ",
+      slideLink: "/The-History-and-Science-of-Medicine.pdf",
       projectLead: "Նախագծի ղեկավար",
       leadName: "Նարինե Ասատրյան",
       participants: "Նախագծի մասնակիցներ",
@@ -43,7 +46,6 @@ function HeroSection({ language }) {
         "Նարե Դարբինյան",
         "Ալլա Այվազյան",
         "Սերգեյ Դանիելյան",
-        "Կարեն Մարդանյան",
         "Արամ Կարապետյան",
         "Դավիթ Հովհաննիսյան",
       ],
@@ -55,7 +57,7 @@ function HeroSection({ language }) {
 
   return (
     <section className="hero-section" id="home">
-      {/* ✅ Տեսանյութ */}
+      {/* Background Video */}
       <video
         className="video-background"
         src={medicineVideo}
@@ -65,12 +67,23 @@ function HeroSection({ language }) {
         playsInline
       />
 
-      {/* <div className="hero-overlay"></div> */}
-
       <div className="hero-content">
         <h1>{t.title}</h1>
-        <p>{t.description}</p>
 
+        {/* Description with clickable slide link */}
+        <p>
+          {t.description}{" "}
+          <a
+            href={t.slideLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#89f7fe", textDecoration: "underline" }}
+          >
+            {t.slideText}
+          </a>
+        </p>
+
+        {/* Project Info */}
         <div className="project-info">
           <p>
             <strong>{t.projectLead}:</strong> {t.leadName}
@@ -85,6 +98,7 @@ function HeroSection({ language }) {
           </div>
         </div>
 
+        {/* Scroll Button */}
         <button className="hero-button" onClick={scrollToHistory}>
           {t.button}
         </button>

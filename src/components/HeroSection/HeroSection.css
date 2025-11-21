@@ -1,14 +1,18 @@
+/* =============================== */
+/* HERO SECTION (FINAL VERSION)   */
+/* =============================== */
+
 .hero-section {
   position: relative;
   width: 100%;
-  height: 100vh; /* Լրիվ էկրան */
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 
-/* Տեսանյութը */
+/* Video background */
 .video-background {
   position: absolute;
   top: 0;
@@ -16,11 +20,12 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -2; /* ավելի ցածր՝ overlay-ը լինի վերևում */
+  object-position: center;
+  z-index: -2;
   filter: brightness(0.9) saturate(1.2);
 }
 
-/* Overlay՝ առանց լրացուցիչ div-ի */
+/* Blue overlay */
 .hero-section::after {
   content: "";
   position: absolute;
@@ -28,18 +33,19 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(14, 60, 83, 0.55); /* մուգ կապույտ թափանցիկ շերտ */
-  z-index: -1; /* վերև video-ից, բայց տակ content-ի */
+  background: rgba(14, 60, 83, 0.55);
+  z-index: -1;
   pointer-events: none;
 }
 
+/* Content */
 .hero-content {
   position: relative;
   text-align: center;
   color: var(--white);
   padding: 0 20px;
   margin-top: 30px;
-  z-index: 1; /* content-ը միշտ լինի վերևում */
+  z-index: 1;
 }
 
 .hero-content h1 {
@@ -54,10 +60,10 @@
   color: var(--white);
 }
 
-/* === B U T T O N === */
+/* Button */
 .hero-button {
   position: relative;
-  overflow: hidden; /* որպեսզի փայլը չանցնի սահմաններից դուրս */
+  overflow: hidden;
   background: linear-gradient(135deg, #66a6ff, #89f7fe);
   color: #fff;
   border: none;
@@ -70,7 +76,7 @@
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Փայլի էֆեկտ */
+/* Shine effect */
 .hero-button::before {
   content: "";
   position: absolute;
@@ -106,14 +112,10 @@
 }
 
 .scroll-down svg {
-  color: #89f7fe; /* կամ անհրաժեշտ գույնը */
+  color: #89f7fe;
 }
 
-.scroll-down svg:hover {
-  color: #66a6ff; /* կամ անհրաժեշտ գույնը */
-}
-
-/* Անընդհատ վեր-ներք շարժում */
+/* Bounce animation */
 @keyframes bounce {
   0%,
   20%,
@@ -130,45 +132,90 @@
   }
 }
 
+/* Project info */
 .project-info {
   margin: 1.5rem 0;
   color: var(--white);
   font-size: 1rem;
-  text-align: center; /* Կենտրոն align */
+  text-align: center;
 }
 
 .project-info strong {
   color: #89f7fe;
 }
 
-.project-info > div {
-  margin-top: 0.5rem;
+/* ==================== */
+/*    RESPONSIVE CSS    */
+/* ==================== */
+
+/* Large tablets ≤ 1024px */
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-content p {
+    font-size: 1.5rem;
+  }
 }
 
-.project-info > div p {
-  margin: 0.2rem 0;
-}
-
-/* Responsive */
+/* Tablets ≤ 768px */
 @media (max-width: 768px) {
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
-
   .hero-content p {
-    font-size: 20px;
+    font-size: 1.05rem;
   }
-
   .hero-button {
-    padding: 10px 20px;
-    font-size: 16px;
+    font-size: 0.95rem;
   }
 }
 
+/* Mid mobile ≤ 560px */
+@media (max-width: 560px) {
+  .hero-content h1 {
+    font-size: 1.65rem;
+  }
+  .hero-content p {
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+}
+
+/* Mobile ≤ 480px */
 @media (max-width: 480px) {
   .video-background {
     object-fit: cover;
-    object-position: 35% center; /* ← Վիդեոն մի քիչ դեպի ձախ է սահում */
-    filter: brightness(0.6) saturate(1);
+    object-position: 35% center;
+    filter: brightness(0.65) saturate(1.1);
+  }
+
+  .hero-content h1 {
+    font-size: 1.9rem;
+    line-height: 1.25;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .hero-button {
+    font-size: 0.88rem;
+  }
+}
+
+/* Very small screens ≤ 360px */
+@media (max-width: 360px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-button {
+    font-size: 1.66rem;
   }
 }
