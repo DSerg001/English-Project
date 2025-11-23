@@ -38,7 +38,7 @@
   pointer-events: none;
 }
 
-/* Content */
+/* Content wrapper */
 .hero-content {
   position: relative;
   text-align: center;
@@ -54,23 +54,72 @@
   color: #89f7fe;
 }
 
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+/* DESCRIPTION */
+.hero-description {
+  margin-bottom: 1.5rem;
+}
+
+.hero-description p {
+  font-size: 1.3rem;
   color: var(--white);
 }
 
-/* Button */
+/* SLIDE LINK inside description */
+.slide-link {
+  color: #89f7fe;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.slide-link:hover {
+  color: #66a6ff;
+}
+
+/* PROJECT INFO */
+.project-info {
+  margin: 1.5rem 0;
+  color: var(--white);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.project-info strong {
+  color: #89f7fe;
+}
+
+/* PARTICIPANTS */
+.participants {
+  margin-top: 25px;
+}
+
+.participant-list {
+  margin-top: 8px;
+}
+
+.participants strong {
+  color: #89f7fe;
+}
+
+.participant-name {
+  font-size: 1rem;
+  line-height: 25px;
+  color: var(--white);
+  margin: 3px 0;
+}
+
+/* BUTTON */
 .hero-button {
   position: relative;
   overflow: hidden;
   background: linear-gradient(135deg, #66a6ff, #89f7fe);
   color: #fff;
   border: none;
-  padding: 12px 30px;
+  padding: 10px 20px;
   font-size: 1rem;
   font-weight: 600;
   border-radius: 12px;
+  margin-top: 12px;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
@@ -132,18 +181,6 @@
   }
 }
 
-/* Project info */
-.project-info {
-  margin: 1.5rem 0;
-  color: var(--white);
-  font-size: 1rem;
-  text-align: center;
-}
-
-.project-info strong {
-  color: #89f7fe;
-}
-
 /* ==================== */
 /*    RESPONSIVE CSS    */
 /* ==================== */
@@ -153,8 +190,8 @@
   .hero-content h1 {
     font-size: 2.5rem;
   }
-  .hero-content p {
-    font-size: 1.5rem;
+  .hero-description p {
+    font-size: 1.4rem;
   }
 }
 
@@ -163,7 +200,7 @@
   .hero-content h1 {
     font-size: 1.9rem;
   }
-  .hero-content p {
+  .hero-description p {
     font-size: 1.05rem;
   }
   .hero-button {
@@ -176,7 +213,7 @@
   .hero-content h1 {
     font-size: 1.65rem;
   }
-  .hero-content p {
+  .hero-description p {
     font-size: 0.95rem;
     line-height: 1.45;
   }
@@ -191,13 +228,44 @@
   }
 
   .hero-content h1 {
-    font-size: 1.9rem;
+    font-size: 1.3rem;
     line-height: 1.25;
   }
 
-  .hero-content p {
-    font-size: 1rem;
+  .hero-description p {
+    font-size: 0.8rem;
     line-height: 1.5;
+  }
+
+  .project-info {
+    margin: 1.5rem 0;
+    color: var(--white);
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .project-info strong {
+    color: #89f7fe;
+  }
+
+  /* PARTICIPANTS */
+  .participants {
+    margin-top: 25px;
+  }
+
+  .participant-list {
+    margin-top: 8px;
+  }
+
+  .participants strong {
+    color: #89f7fe;
+  }
+
+  .participant-name {
+    font-size: 1rem;
+    line-height: 25px;
+    color: var(--white);
+    margin: 3px 0;
   }
 
   .hero-button {
@@ -208,14 +276,46 @@
 /* Very small screens ≤ 360px */
 @media (max-width: 360px) {
   .hero-content h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    margin-top: 30%;
   }
 
-  .hero-content p {
+  .hero-description p {
+    font-size: 0.7rem;
+  }
+
+    .project-info {
+    margin: 1.5rem 0;
+    color: var(--white);
     font-size: 1rem;
+    text-align: center;
+  }
+
+  .project-info strong {
+    color: #89f7fe;
+  }
+
+  /* PARTICIPANTS */
+  .participants {
+    margin-top: 25px;
+  }
+
+  .participant-list {
+    margin-top: 8px;
+  }
+
+  .participants strong {
+    color: #89f7fe;
+  }
+
+  .participant-name {
+    font-size: 1rem;
+    line-height: 25px;
+    color: var(--white);
+    margin: 3px 0;
   }
 
   .hero-button {
-    font-size: 1.66rem;
+    font-size: 0.7rem;
   }
 }

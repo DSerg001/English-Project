@@ -70,14 +70,14 @@ about the human body, and present everything in English.`,
       <div className="hero-content">
         <h1>{t.title}</h1>
 
-        {/* Description with clickable slide link */}
-        <p>
+        {/* Description with slide link */}
+        <p className="hero-description">
           {t.description}{" "}
           <a
             href={t.slideLink}
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: "#89f7fe", textDecoration: "underline" }}
+            className="slide-link"
           >
             {t.slideText}
           </a>
@@ -88,17 +88,24 @@ about the human body, and present everything in English.`,
           <p>
             <strong>{t.projectLead}:</strong> {t.leadName}
           </p>
+        </div>
+
+        {/* Participants */}
+        <div className="participants">
           <p>
             <strong>{t.participants}:</strong>
           </p>
-          <div>
+
+          <div className="participant-list">
             {t.names.map((name, index) => (
-              <p key={index}>{name}</p>
+              <p key={index} className="participant-name">
+                {name}
+              </p>
             ))}
           </div>
         </div>
 
-        {/* Scroll Button */}
+        {/* Button */}
         <button className="hero-button" onClick={scrollToHistory}>
           {t.button}
         </button>
