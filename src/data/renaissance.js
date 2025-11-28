@@ -5,6 +5,21 @@ const renaissance = [
     group: { en: "Italian Doctors", hy: "Իտալացի բժիշկներ" }, // Ճշգրտում
     doctors: [
       {
+        name: { en: "Leonardo da Vinci", hy: "Լեոնարդո Դա Վինչի" },
+        lifespan: { en: "1452–1519", hy: "1452–1519 թթ." },
+        title: {
+          en: "Painter, inventor, engineer, scientist, polymath",
+          hy: "Նկարիչ, գյուտարար, ինժեներ, գիտնական, ռենեսանսի բազմագիտեր",
+        },
+        information: {
+          en: "Renowned Renaissance polymath — creator of masterpieces like the Mona Lisa and The Last Supper; conducted extensive anatomical and mechanical studies and produced conceptual designs for flying machines, bridges, and military devices.",
+          hy: "Հռչակավոր ռենեսանսի բազմագիտեր — Մոնա Լիզա և Վերջին ընթրիքը հեղինակներից․ իրականացրել է լայնածավալ անատոմիական և մեխանիկական ուսումնասիրություններ և նկարագրել թռչող մեքենաների, կամուրջների և ռազմական սարքերի գաղափարներ։",
+        },
+        image:
+          "https://www.meisterdrucke.uk/kunstwerke/1260px/Unknown_Artist_-_Portrait_of_Leonard_de_Vinci_%281452-1519%29_%28Leonardo_da_Vinci%29_Italian_painter_-_%28MeisterDrucke-933700%29.jpg",
+        link: "https://en.wikipedia.org/wiki/Leonardo_da_Vinci",
+      },
+      {
         name: { en: "Andreas Vesalius", hy: "Անդրեաս Վեզալիուս" },
         lifespan: { en: "1514–1564", hy: "1514–1564 թթ." }, // Ճշգրտում
         title: {
@@ -58,6 +73,33 @@ const renaissance = [
           "https://upload.wikimedia.org/wikipedia/commons/b/b0/Leonardo_Fioravanti.jpg",
         link: "https://en.wikipedia.org/wiki/Leonardo_Fioravanti_(doctor)",
       },
+      {
+        name: { en: "Girolamo Fracastoro", hy: "Ջիրոլամո Ֆրակաստորո" },
+        lifespan: { en: "1478–1553", hy: "1478–1553 թթ." }, // Ճշգրտում
+        title: {
+          en: "Epidemiologist and Theorist of Contagion",
+          hy: "Համաճարակաբան և վարակի տեսության նախահայր",
+        },
+        information: {
+          en: "Proposed that diseases are caused by transferable particles or 'seeds of contagion'.",
+          hy: "Առաջարկել է, որ հիվանդությունները փոխանցվում են մասնիկներով կամ «վարակիչ սերմերով»։",
+        },
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Titian_Girolamo_FracastoroFXD.jpg/500px-Titian_Girolamo_FracastoroFXD.jpg",
+        link: "https://en.wikipedia.org/wiki/Girolamo_Fracastoro",
+      },
+      {
+        name: { en: "Bartolomeo Eustachi", hy: "Բարտոլոմեո Էուստաչի" },
+        lifespan: { en: "1510–1574", hy: "1510–1574 թթ." }, // Ճշգրտում
+        title: { en: "Anatomist", hy: "Անատոմ" },
+        information: {
+          en: "Known for studies of the ear and heart; Eustachian tube named after him.",
+          hy: "Հայտնի է ականջի և սրտի ուսումնասիրություններով. Եվստախյան խողովակը կոչվել է նրա անունով։", // Ճշգրտում
+        },
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Bartolomeus_Eustachius.jpg/500px-Bartolomeus_Eustachius.jpg",
+        link: "https://en.wikipedia.org/wiki/Bartolomeo_Eustachi",
+      },
     ],
   },
   {
@@ -108,38 +150,6 @@ const renaissance = [
         image:
           "https://merian-alchemie.ub.uni-frankfurt.de/wp-content/uploads/Rubens-Paracelsus_Beitrag-Esposito-1071x1536.jpg",
         link: "https://en.wikipedia.org/wiki/Paracelsus",
-      },
-    ],
-  },
-  {
-    group: { en: "Italian Doctors", hy: "Իտալացի բժիշկներ" }, // Ճշգրտում
-    doctors: [
-      {
-        name: { en: "Girolamo Fracastoro", hy: "Ջիրոլամո Ֆրակաստորո" },
-        lifespan: { en: "1478–1553", hy: "1478–1553 թթ." }, // Ճշգրտում
-        title: {
-          en: "Epidemiologist and Theorist of Contagion",
-          hy: "Համաճարակաբան և վարակի տեսության նախահայր",
-        },
-        information: {
-          en: "Proposed that diseases are caused by transferable particles or 'seeds of contagion'.",
-          hy: "Առաջարկել է, որ հիվանդությունները փոխանցվում են մասնիկներով կամ «վարակիչ սերմերով»։",
-        },
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Titian_Girolamo_FracastoroFXD.jpg/500px-Titian_Girolamo_FracastoroFXD.jpg",
-        link: "https://en.wikipedia.org/wiki/Girolamo_Fracastoro",
-      },
-      {
-        name: { en: "Bartolomeo Eustachi", hy: "Բարտոլոմեո Էուստաչի" },
-        lifespan: { en: "1510–1574", hy: "1510–1574 թթ." }, // Ճշգրտում
-        title: { en: "Anatomist", hy: "Անատոմ" },
-        information: {
-          en: "Known for studies of the ear and heart; Eustachian tube named after him.",
-          hy: "Հայտնի է ականջի և սրտի ուսումնասիրություններով. Եվստախյան խողովակը կոչվել է նրա անունով։", // Ճշգրտում
-        },
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Bartolomeus_Eustachius.jpg/500px-Bartolomeus_Eustachius.jpg",
-        link: "https://en.wikipedia.org/wiki/Bartolomeo_Eustachi",
       },
     ],
   },

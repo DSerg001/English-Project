@@ -81,6 +81,41 @@ const armenian_doctors = [
       },
     ],
   },
+  {
+    group: { en: "20th & 21st Centuries", hy: "20-րդ և 21-րդ դարեր" }, // Ճշգրտում
+    doctors: [
+      {
+        name: { en: "Raymond Damadian", hy: "Ռայմոնդ Դամադյան" },
+        lifespan: { en: "1936-2022", hy: "1936-2022 թթ." }, // Ճշգրտում
+        title: {
+          en: "Inventor, doctor, physicist, entrepreneur",
+          hy: "Գյուտարար, բժիշկ, ֆիզիկոս, ձեռնարկատեր",
+        },
+        information: {
+          en: "Built the world's first MRI scanner in 1977 and performed the first full-body human MRI scan using the 'Indomitable' machine",
+          hy: "1977 թվականին կառուցեց աշխարհի առաջին ՄՌՏ սարքավորումը և «Indomitable» սարքով իրականացրեց առաջին ամբողջ մարմնի ՄՌՏ սկանավորումը։", // Ճշգրտում
+        },
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Raymond_Damadian.jpg/375px-Raymond_Damadian.jpg",
+        link: "https://en.wikipedia.org/wiki/Raymond_Damadian",
+      },
+      {
+        name: { en: "Ardem Patapoutian", hy: "Արդեմ Փաթափության" },
+        lifespan: { en: "1967-", hy: "1967 —" },
+        title: {
+          en: "Molecular biologist, neuroscientist, Nobel Prize laureate",
+          hy: "Մոլեկուլային կենսաբան, նյարդաբան, Նոբելյան մրցանակակիր",
+        },
+        information: {
+          en: "Discovered the Piezo1 and Piezo2 receptors responsible for sensing touch, pressure, and mechanical stimuli; awarded the 2021 Nobel Prize in Physiology or Medicine.",
+          hy: "Բացահայտել է Piezo1 և Piezo2 ռեցեպտորները, որոնք պատասխանատու են դիպչման, ճնշման և մեխանիկական ազդակների զգացման համար․ 2021 թվականին արժանացել է Ֆիզիոլոգիայի կամ բժշկության Նոբելյան մրցանակի։",
+        },
+        image:
+          "https://images.squarespace-cdn.com/content/v1/5d2654f99ef77e0001b12b99/2e96029b-a7e3-4fff-9bfd-6edd703b685d/ardem_Nobel.jpeg",
+        link: "https://en.wikipedia.org/wiki/Ardem_Patapoutian",
+      },
+    ],
+  },
 ];
 
 export default armenian_doctors;
